@@ -28,12 +28,12 @@
                                 <td class="width-30p">{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
                                 <!-- 更新ボタン -->
-                                <td>
-                                    <form action="" method="POST">
-                                    {{ csrf_field() }}
-                                    <button type="submit" class="btn btn-default">詳細</button>
-                                    </form>
-                                </td>
+                                <!--<td>-->
+                                <!--    <form action="" method="POST">-->
+                                <!--    {{ csrf_field() }}-->
+                                <!--    <button type="submit" class="btn btn-default">詳細</button>-->
+                                <!--    </form>-->
+                                <!--</td>-->
                                 <!-- 削除ボタン -->
                                 <td>
                                     <form action="" method="POST">
