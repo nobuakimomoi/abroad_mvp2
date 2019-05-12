@@ -22,7 +22,36 @@
             </div>
             <div class="col-md-8">
                         <h3>{{$company->company_name}}</h3>
-                        <p>☆☆☆☆☆</p>
+                        <p>
+                        
+                        @if (count($reviews) > 0)
+                        <?php
+                                $score = 0;
+                                $count = 0;
+                        ?>
+                        @foreach ($reviews as $review)
+                        <?php
+                                $score += $review->work_env_rate;
+                                $count ++;
+                        ?>
+                            
+                        @endforeach
+                        <?php
+                            $score = $score/$count;
+                            echo 'Score'.round($score,2).'　';
+                        ?>
+                        
+                        @for($i=0; $i<(int)$score; $i++)
+                        ★
+                        @endfor
+                        @for($i=(int)$score; $i<5; $i++)
+                        ☆
+                        @endfor
+                        @endif
+                        
+          
+                        </p>
+                        
             </div>
             <div class="col-md-2">
                 <form action="{{ url('reviewform/'.$company->id)}}" method="POST">
@@ -117,10 +146,13 @@
         <h3>Write your review to unlock everything on Abroad</h3>
         <p>Abroad is a career community that depends on everyone being able to share an inside look at a company they know.</p>
         <p>It's anonymous and will only take a minute.</p>
-        <form action="{{ url('reviewform/'.$company->id)}}" method="GET">
-            {{ csrf_field() }}
-            <button type="submit" class="btn btn-primary btn-lg btn-center">Write a review</button>
-        </form>
+        <!--<form action="{{ url('reviewform/'.$company->id)}}" method="GET">-->
+        <!--    {{ csrf_field() }}-->
+        <!--    <button type="submit" class="btn btn-primary btn-lg btn-center">Write a review</button>-->
+        <!--</form>-->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsSt4kKco9jKh98IdL-74_q47adv-LuKmZ9kPr8lU-1MMJxw/viewform">
+            <button class="btn btn-primary btn-lg btn-center">Write a review</button>
+        </a>
     </div>
     <!--EndPanel-->
 

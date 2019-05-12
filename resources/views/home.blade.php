@@ -44,7 +44,7 @@
                         <h4><a href="{{action('CompaniesController@overview', $company->id) }}">{{ $company->company_name }}</a></h4>
                         <p>{{ $company->hq_adress }}</p>
                         <p>
-                        <?php $score = rand(1,5);?>
+                        <?php $score = rand(2,5);?>
                         @for($i=0; $i<$score; $i++)
                         ★
                         @endfor
@@ -81,9 +81,9 @@ var config = {
       'Compensation and benefits',
       'Gender equality'],
 		datasets: [{
-			backgroundColor: color('#cc004a').alpha(0.5).rgbString(),
-			borderColor: '#cc004a',
-			pointBackgroundColor: '#cc004a',
+			backgroundColor: color('#3097d1').alpha(0.5).rgbString(),
+			borderColor: '#3097d1',
+			pointBackgroundColor: '#3097d1',
 			lineTension: 0.2,
 			borderWidth:0.1,
 			pointRadius:0,
