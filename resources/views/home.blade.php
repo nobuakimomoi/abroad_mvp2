@@ -48,8 +48,26 @@
                         <p>
                         <?php
                         if($company->reviews_count>0){
-                            $score = $company->reviews_sum_rate/$company->reviews_count;
+                            $reviews_sum_work_env_rate = $company->reviews_sum_work_env_rate/$company->reviews_count;
+                            $reviews_sum_promotion_rate = $company->reviews_sum_promotion_rate/$company->reviews_count;
+                            $reviews_sum_work_life_balance_rate = $company->reviews_sum_work_life_balance_rate/$company->reviews_count;
+                            $reviews_sum_growth_rate = $company->reviews_sum_growth_rate/$company->reviews_count;
+                            $reviews_sum_c_and_b_rate = $company->reviews_sum_c_and_b_rate/$company->reviews_count;
+                            $reviews_sum_gender_equality_rate = $company->reviews_sum_gender_equality_rate/$company->reviews_count;
+                            
+                            $score = ($reviews_sum_work_env_rate 
+                            +$reviews_sum_promotion_rate
+                            +$reviews_sum_work_life_balance_rate
+                            +$reviews_sum_growth_rate
+                            +$reviews_sum_c_and_b_rate
+                            +$reviews_sum_gender_equality_rate)/6.0;
                         }else{
+                            $reviews_sum_work_env_rate = null;
+                            $reviews_sum_promotion_rate = null;
+                            $reviews_sum_work_life_balance_rate = null;
+                            $reviews_sum_growth_rate = null;
+                            $reviews_sum_c_and_b_rate = null;;
+                            $reviews_sum_gender_equality_rate = null;
                             $score = null;
                         }
                         ?>
@@ -89,18 +107,12 @@ var config = {
 			borderWidth:0.1,
 			pointRadius:0,
 			data: [
-			    {{$score}},
-			    {{$score}},
-			    {{$score}},
-			    {{$score}},
-			    {{$score}},
-			    {{$score}},
-			 //   Math.round(Math.random() * 100/20),
-			 //   Math.round(Math.random() * 100/20),
-			 //   Math.round(Math.random() * 100/20),
-			 //   Math.round(Math.random() * 100/20),
-			 //   Math.round(Math.random() * 100/20),
-			 //   Math.round(Math.random() * 100/20)
+			    {{$reviews_sum_work_env_rate}},
+			    {{$reviews_sum_promotion_rate}},
+			    {{$reviews_sum_work_life_balance_rate}},
+			    {{$reviews_sum_growth_rate}},
+			    {{$reviews_sum_c_and_b_rate}},
+			    {{$reviews_sum_gender_equality_rate}},
 			    ]
 		},]
 	},

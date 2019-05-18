@@ -66,12 +66,15 @@
             <h2 class="benefit-title text-center">How Abroad works for you</h2>
             <div class="benefit-container">
                 <div class="col-md-4 benefit-item">
+                    <i class="far fa-comment-alt benefit-icon"></i>
                     <p class="normal-font">Company reviews by non-Japanese professionals in the companies in Japan</p>
                 </div>
                 <div class="col-md-4 benefit-item">
+                    <i class="far fa-comments benefit-icon"></i>
                     <p class="normal-font">Communicate with non-Japanese professionals working in Japan and learn about their companies</p>
                 </div>
-                <div class="col-md-4 benefit-item">       
+                <div class="col-md-4 benefit-item">   
+                    <i class="fas fa-search benefit-icon"></i>
                     <p class="normal-font">Find the companies that actively hire the people with international background</p>
                 </div>
             </div>

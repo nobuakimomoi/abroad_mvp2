@@ -19,6 +19,11 @@
                         <th>employment_condition</th>
                         <th>enrollment_status</th>
                         <th>work_env_rate</th>
+                        <td>promotion_rate</td>
+                        <td>work_life_balance_rate</td>
+                        <td>c_and_b_rate</td>
+                        <td>gender_equality_rate</td>
+                        <td>growth_rate</td>
                         <th>work_env</th>
                         <th>delete</th>
                     </tr>
@@ -37,6 +42,11 @@
                             <td>{{ $review->employment_condition }}</td>
                             <td>{{ $review->enrollment_status }}</td>
                             <td>{{ $review->work_env_rate }}</td>
+                            <td>{{ $review->promotion_rate }}</td>
+                            <td>{{ $review->work_life_balance_rate }}</td>
+                            <td>{{ $review->c_and_b_rate }}</td>
+                            <td>{{ $review->gender_equality_rate }}</td>
+                            <td>{{ $review->growth_rate }}</td>
                             <td class="width-30p">{{ $review->work_env }}</td>
 
                             <!-- 削除ボタン -->

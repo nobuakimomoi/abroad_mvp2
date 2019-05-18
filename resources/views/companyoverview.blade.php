@@ -126,14 +126,13 @@
                 </div>
             </div>
             <div style="justify-content:space-between">
-                <div class="average-stars">
-                    @for($i=0; $i<$review->work_env_rate; $i++)
-                        ★
-                        @endfor
-                        @for($i=$review->work_env_rate; $i<5; $i++)
-                        ☆
-                    @endfor
-                </div>
+                    work_env_rate:{{$review->work_env_rate}}<br>
+                    promotion_rate:{{$review->promotion_rate}}<br>
+                    work_life_balance_rate:{{$review->work_life_balance_rate}}<br>
+                    c_and_b_rate:{{$review->c_and_b_rate}}<br>
+                    gender_equality_rate:{{$review->gender_equality_rate}}<br>
+                    growth_rate:{{$review->growth_rate}}<br>
+
                 <div class="written-in">
                     <p>Written in {{$review->created_at}}</p>
                 </div>

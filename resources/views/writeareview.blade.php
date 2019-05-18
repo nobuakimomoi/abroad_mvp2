@@ -61,67 +61,49 @@
             <dd class="form-item_review">
                 @include('common.rating')
             </dd>
-            
 
             <dt class="form-title_review check-radio school-type">Employee growth oppurtunity/environment</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="very_good"><input type="radio" name="growth_rate" required id="very_good" value="Very good">Very good</label>
-                <label for="good"><input type="radio" name="growth_rate" required id="good" value="good">Good</label>
-                <label for="not_sure"><input type="radio" name="growth_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="bad"><input type="radio" name="growth_rate" required id="bad" value="bad">Bad</label>
-                <label for="very_bad"><input type="radio" name="growth_rate" required id="very_bad" value="very_bad">Very bad</label>
+            <dd class="form-item_review" >
+                <label for="very_good"><input type="radio" name="growth_rate" required id="very_good" value="5">Very good</label>
+                <label for="good"><input type="radio" name="growth_rate" required id="good" value="4">Good</label>
+                <label for="not_sure"><input type="radio" name="growth_rate" required id="not_sure" value="3">Not sure</label>
+                <label for="bad"><input type="radio" name="growth_rate" required id="bad" value="2">Bad</label>
+                <label for="very_bad"><input type="radio" name="growth_rate" required id="very_bad" value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Promotion of non-Japanese employees</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="fair"><input type="radio" name="promotion_rate" required id="fair" value="Fair">Fair</label>
-                <label for="somewhat_fair"><input type="radio" name="promotion_rate" required id="somewhat_fair" value="somewhat_fair">Somewhat fair</label>
-                <label for="not_sure"><input type="radio" name="promotion_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="somewhat_unfair"><input type="radio" name="promotion_rate" required id="somewhat_unfair" value="bad">Somewhat unfair</label>
-                <label for="unfair"><input type="radio" name="promotion_rate" required id="unfair" value="unfair">Unfair</label>
+            <dd class="form-item_review">
+                <label for="fair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="5">Fair</label>
+                <label for="somewhat_fair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="4">Somewhat fair</label>
+                <label for="not_sure"><input type="radio" name="promotion_rate" required id="promotion_rate" value="3">Not sure</label>
+                <label for="somewhat_unfair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="2">Somewhat unfair</label>
+                <label for="unfair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="1">Unfair</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Work-life balance</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="very_good"><input type="radio" name="work_life_balance_rate" required id="very_good" value="Very good">Very good</label>
-                <label for="good"><input type="radio" name="work_life_balance_rate" required id="good" value="good">Good</label>
-                <label for="not_sure"><input type="radio" name="work_life_balance_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="bad"><input type="radio" name="work_life_balance_rate" required id="bad" value="bad">Bad</label>
-                <label for="very_bad"><input type="radio" name="work_life_balance_rate" required id="very_bad" value="very_bad">Very bad</label>
+            <dd class="form-item_review" >
+                <label for="very_good"><input type="radio" name="work_life_balance_rate" required id="very_good" value="5">Very good</label>
+                <label for="good"><input type="radio" name="work_life_balance_rate" required id="good" value="4">Good</label>
+                <label for="not_sure"><input type="radio" name="work_life_balance_rate" required id="not_sure" value="3">Not sure</label>
+                <label for="bad"><input type="radio" name="work_life_balance_rate" required id="bad" value="2">Bad</label>
+                <label for="very_bad"><input type="radio" name="work_life_balance_rate" required id="very_bad" value="1">Very bad</label>
             </dd>
 
-            <dt class="form-title_review check-radio" style="margin-bottom: 4px">Gap before and after joining the company
-                <br><span style="font-size: 1.3rem">&nbsp;&#040;e.g. Job description vs actual job&#041;&nbsp;</span></dt>
-            <dd class="form-item_review" style="margin-bottom: 0px; margin-top:4px">
-                <label for="fair"><input type="radio" name="gap_rate" required id="fair" value="Fair">Fair</label>
-                <label for="somewhat_fair"><input type="radio" name="gap_rate" required id="somewhat_fair" value="somewhat_fair">Somewhat fair</label>
-                <label for="not_sure"><input type="radio" name="gap_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="somewhat_unfair"><input type="radio" name="gap_rate" required id="somewhat_unfair" value="bad">Somewhat unfair</label>
-                <label for="unfair"><input type="radio" name="gap_rate" required id="unfair" value="unfair">Unfair</label>
-            </dd>
             <dt class="form-title_review check-radio school-type">Compensation and benefits</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="very_good"><input type="radio" name="c_and_b_rate" required id="very_good" value="Very good">Very good</label>
-                <label for="good"><input type="radio" name="c_and_b_rate" required id="good" value="good">Good</label>
-                <label for="not_sure"><input type="radio" name="c_and_b_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="bad"><input type="radio" name="c_and_b_rate" required id="bad" value="bad">Bad</label>
-                <label for="very_bad"><input type="radio" name="c_and_b_rate" required id="very_bad" value="very_bad">Very bad</label>
+            <dd class="form-item_review" >
+                <label for="very_good"><input type="radio" name="c_and_b_rate" required id="very_good" value="5">Very good</label>
+                <label for="good"><input type="radio" name="c_and_b_rate" required id="good" value="4">Good</label>
+                <label for="not_sure"><input type="radio" name="c_and_b_rate" required id="not_sure" value="3">Not sure</label>
+                <label for="bad"><input type="radio" name="c_and_b_rate" required id="bad" value="2">Bad</label>
+                <label for="very_bad"><input type="radio" name="c_and_b_rate" required id="very_bad" value="1">Very bad</label>
             </dd>
             <dt class="form-title_review check-radio school-type">Gender equality</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="very_good"><input type="radio" name="gender_equality_rate" required id="very_good" value="Very good">Very good</label>
-                <label for="good"><input type="radio" name="gender_equality_rate" required id="good" value="good">Good</label>
-                <label for="not_sure"><input type="radio" name="gender_equality_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="bad"><input type="radio" name="gender_equality_rate" required id="bad" value="bad">Bad</label>
-                <label for="very_bad"><input type="radio" name="gender_equality_rate" required id="very_bad" value="very_bad">Very bad</label>
-            </dd>
-            <dt class="form-title_review check-radio school-type">Compliance</dt>
-            <dd class="form-item_review" style="margin-bottom: 0px">
-                <label for="very_good"><input type="radio" name="compliance_rate" required id="very_good" value="Very good">Very good</label>
-                <label for="good"><input type="radio" name="compliance_rate" required id="good" value="good">Good</label>
-                <label for="not_sure"><input type="radio" name="compliance_rate" required id="not_sure" value="not_sure">Not sure</label>
-                <label for="bad"><input type="radio" name="compliance_rate" required id="bad" value="bad">Bad</label>
-                <label for="very_bad"><input type="radio" name="compliance_rate" required id="very_bad" value="very_bad">Very bad</label>
+            <dd class="form-item_review" >
+                <label for="very_good"><input type="radio" name="gender_equality_rate" required id="very_good" value="5">Very good</label>
+                <label for="good"><input type="radio" name="gender_equality_rate" required id="good" value="4">Good</label>
+                <label for="not_sure"><input type="radio" name="gender_equality_rate" required id="not_sure" value="3">Not sure</label>
+                <label for="bad"><input type="radio" name="gender_equality_rate" required id="bad" value="2">Bad</label>
+                <label for="very_bad"><input type="radio" name="gender_equality_rate" required id="very_bad" value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review radio_padding">Average monthly overtime working hours
@@ -207,7 +189,7 @@
                                     <textarea name="" id="other_comments" cols="60" rows="6" class="text-box text_count"></textarea>
                                     <div style="text-align: right"><span class="count"></span> words</div>
                                 </dd>
-            </dl><!--End dl-->
+            </dl>
                             
                                 
             <!-- user情報を送信 -->

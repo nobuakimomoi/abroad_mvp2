@@ -28,10 +28,9 @@ class CreateReviewsTable extends Migration
             $table->integer('work_env_rate')->nullable();
             $table->integer('promotion_rate')->nullable();
             $table->integer('work_life_balance_rate')->nullable();
-            $table->integer('gap_rate')->nullable();
             $table->integer('c_and_b_rate')->nullable();
             $table->integer('gender_equality_rate')->nullable();
-            $table->integer('compliance_rate')->nullable();
+            $table->integer('growth_rate')->nullable();
             $table->integer('overtime')->nullable();
             $table->string('work_env')->nullable();
             $table->string('screening')->nullable();
