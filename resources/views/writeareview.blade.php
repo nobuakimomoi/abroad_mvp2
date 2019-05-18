@@ -23,11 +23,11 @@
         <dl class="form-inner">
             <dt class="form-title_review check-radio">Employment condition</dt>
             <dd class="form-item_review">
-                <label for="permanent_employee" required><input type="radio" name="employment_condition" id="permanent_employee" value="permanent_employee" class="radio_horizontal">Permanent</label>
-                <label for="contact" required><input type="radio" name="employment_condition" id="contract" value="contract" class="radio_horizontal">Contract</label>                            
-                <label for="temporary" required><input type="radio" name="employment_condition" id="temporary" value="temporary" class="radio_horizontal">Temporary&nbsp;/&nbsp;dispatched</label>
-                <label for="internship" required><input type="radio" name="employment_condition" id="internship" value="internship" class="radio_horizontal">Internship</label>                         
-                <label for="other_status" required><input type="radio" name="employment_condition" id="other_status" value="other_status" class="radio_horizontal">Other</label>
+                <label for="permanent_employee" ><input type="radio" name="employment_condition" id="permanent_employee" value="permanent_employee" class="radio_horizontal">Permanent</label>
+                <label for="contact" ><input type="radio" name="employment_condition" id="contract" value="contract" class="radio_horizontal">Contract</label>                            
+                <label for="temporary" ><input type="radio" name="employment_condition" id="temporary" value="temporary" class="radio_horizontal">Temporary&nbsp;/&nbsp;dispatched</label>
+                <label for="internship" ><input type="radio" name="employment_condition" id="internship" value="internship" class="radio_horizontal">Internship</label>                         
+                <label for="other_status" ><input type="radio" name="employment_condition" id="other_status" value="other_status" class="radio_horizontal">Other</label>
                 <p>Abroad review website currentluy does not deal with part-time&nbsp;&#040;baito&#041;&nbsp;reviews.</p>
             </dd>
         </dl>
@@ -64,52 +64,52 @@
 
             <dt class="form-title_review check-radio school-type">Employee growth oppurtunity/environment</dt>
             <dd class="form-item_review" >
-                <label for="very_good"><input type="radio" name="growth_rate" required id="very_good" value="5">Very good</label>
-                <label for="good"><input type="radio" name="growth_rate" required id="good" value="4">Good</label>
-                <label for="not_sure"><input type="radio" name="growth_rate" required id="not_sure" value="3">Not sure</label>
-                <label for="bad"><input type="radio" name="growth_rate" required id="bad" value="2">Bad</label>
-                <label for="very_bad"><input type="radio" name="growth_rate" required id="very_bad" value="1">Very bad</label>
+                <label><input type="radio" name="growth_rate" value="5">Very good</label>
+                <label><input type="radio" name="growth_rate" value="4">Good</label>
+                <label><input type="radio" name="growth_rate" value="3">Not sure</label>
+                <label><input type="radio" name="growth_rate" value="2">Bad</label>
+                <label><input type="radio" name="growth_rate" value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Promotion of non-Japanese employees</dt>
             <dd class="form-item_review">
-                <label for="fair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="5">Fair</label>
-                <label for="somewhat_fair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="4">Somewhat fair</label>
-                <label for="not_sure"><input type="radio" name="promotion_rate" required id="promotion_rate" value="3">Not sure</label>
-                <label for="somewhat_unfair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="2">Somewhat unfair</label>
-                <label for="unfair"><input type="radio" name="promotion_rate" required id="promotion_rate" value="1">Unfair</label>
+                <label><input type="radio" name="promotion_rate"  value="5">Fair</label>
+                <label><input type="radio" name="promotion_rate"  value="4">Somewhat fair</label>
+                <label><input type="radio" name="promotion_rate"   value="3">Not sure</label>
+                <label><input type="radio" name="promotion_rate"  value="2">Somewhat unfair</label>
+                <label><input type="radio" name="promotion_rate"   value="1">Unfair</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Work-life balance</dt>
             <dd class="form-item_review" >
-                <label for="very_good"><input type="radio" name="work_life_balance_rate" required id="very_good" value="5">Very good</label>
-                <label for="good"><input type="radio" name="work_life_balance_rate" required id="good" value="4">Good</label>
-                <label for="not_sure"><input type="radio" name="work_life_balance_rate" required id="not_sure" value="3">Not sure</label>
-                <label for="bad"><input type="radio" name="work_life_balance_rate" required id="bad" value="2">Bad</label>
-                <label for="very_bad"><input type="radio" name="work_life_balance_rate" required id="very_bad" value="1">Very bad</label>
+                <label><input type="radio" name="work_life_balance_rate"   value="5">Very good</label>
+                <label><input type="radio" name="work_life_balance_rate"   value="4">Good</label>
+                <label><input type="radio" name="work_life_balance_rate"   value="3">Not sure</label>
+                <label><input type="radio" name="work_life_balance_rate"   value="2">Bad</label>
+                <label><input type="radio" name="work_life_balance_rate"   value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Compensation and benefits</dt>
             <dd class="form-item_review" >
-                <label for="very_good"><input type="radio" name="c_and_b_rate" required id="very_good" value="5">Very good</label>
-                <label for="good"><input type="radio" name="c_and_b_rate" required id="good" value="4">Good</label>
-                <label for="not_sure"><input type="radio" name="c_and_b_rate" required id="not_sure" value="3">Not sure</label>
-                <label for="bad"><input type="radio" name="c_and_b_rate" required id="bad" value="2">Bad</label>
-                <label for="very_bad"><input type="radio" name="c_and_b_rate" required id="very_bad" value="1">Very bad</label>
+                <label><input type="radio" name="c_and_b_rate"   value="5">Very good</label>
+                <label><input type="radio" name="c_and_b_rate"   value="4">Good</label>
+                <label><input type="radio" name="c_and_b_rate"   value="3">Not sure</label>
+                <label><input type="radio" name="c_and_b_rate"   value="2">Bad</label>
+                <label><input type="radio" name="c_and_b_rate"   value="1">Very bad</label>
             </dd>
             <dt class="form-title_review check-radio school-type">Gender equality</dt>
             <dd class="form-item_review" >
-                <label for="very_good"><input type="radio" name="gender_equality_rate" required id="very_good" value="5">Very good</label>
-                <label for="good"><input type="radio" name="gender_equality_rate" required id="good" value="4">Good</label>
-                <label for="not_sure"><input type="radio" name="gender_equality_rate" required id="not_sure" value="3">Not sure</label>
-                <label for="bad"><input type="radio" name="gender_equality_rate" required id="bad" value="2">Bad</label>
-                <label for="very_bad"><input type="radio" name="gender_equality_rate" required id="very_bad" value="1">Very bad</label>
+                <label><input type="radio" name="gender_equality_rate"   value="5">Very good</label>
+                <label><input type="radio" name="gender_equality_rate"   value="4">Good</label>
+                <label><input type="radio" name="gender_equality_rate"   value="3">Not sure</label>
+                <label><input type="radio" name="gender_equality_rate"   value="2">Bad</label>
+                <label><input type="radio" name="gender_equality_rate"   value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review radio_padding">Average monthly overtime working hours
                 <span style="font-size:1.4rem">&nbsp;&#040;残業&#041;&nbsp;</span></dt>
             <dd class="form-item_review">
-                <select id = "overtime" required>
+                <select id = "overtime" >
                         <option value='0 hour"'>0 hour</option>
                         <option value='5 hours"'>5 hours</option>
                         <option value='10 hours"'>10 hours</option>
@@ -141,54 +141,39 @@
             <dl class="form-inner">
                 <dt class="form-title_review">Work environment for non-Japanese employees</dt>
                 <dd class="form-item_review form-details-item">
-                    <textarea name="work_env" id="work_env" cols="60" rows="6" class="text-box text_count">Fair treatment of non-Japanese employees: Use of languages other than Japanese:
+                    <textarea name="work_env" id="work_env" class="text-box text_count">Fair treatment of non-Japanese employees: Use of languages other than Japanese:
                     </textarea>
-                    <div style="text-align: right"><span class="count"></span> words</div>
+                    <div><span class="count"></span> words</div>
                 </dd>
                                 <dt class="form-title_review">Screening of non-Japanese candidates</dt>
                                 <dd class="form-item_review form-details-item">
-                                    <textarea name="screening" id="screening" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>                             
+                                    <textarea name="screening" id="screening" class="text-box text_count"></textarea>
+                                    <div><span class="count"></span> words</div>                             
                                 </dd>
                                 <dt class="form-title_review">Promotion of non-Japanese employees</dt>
                                 <dd class="form-item_review form-details-item">
-                                    <textarea name="promotion" id="promotion" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
+                                    <textarea name="promotion" id="promotion" class="text-box text_count"></textarea>
+                                    <div><span class="count"></span> words</div>
 
                                 </dd>
-                                <dt class="form-title_review">Gap before and after joining the company</dt>
-                                <dd class="form-item_review form-details-item">
-                                    <textarea name="gap" id="gap" cols="60" rows="6" class="text-box text_count">Any written or verbal job-description before joining the company?Are the actual tasks you do at the company following the job discription?
-                                    </textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
-                                </dd>
+                                
                                 <dt class="form-title_review">Employee growth opportuntiy / environment</dt>
                                 <dd class="form-item_review form-details-item">
-                                    <textarea name="growth" id="growth" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
+                                    <textarea name="growth" id="growth" class="text-box text_count"></textarea>
+                                    <div><span class="count"></span> words</div>
                                 </dd>
                                 <dt class="form-title_review">Gender equality</dt>
                                 <dd class="form-item_review form-details-item">
-                                    <textarea name="gender_equality" id="gender_equality" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
+                                    <textarea name="gender_equality" id="gender_equality" class="text-box text_count"></textarea>
+                                    <div><span class="count"></span> words</div>
                                 </dd>
                                 <dt class="form-title_review">Compensation and benefits</dt>
                                 <dd class="form-item_review form-details-item">
-                                    <textarea name="c_and_b" id="c_and_b" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
+                                    <textarea name="c_and_b" id="c_and_b" class="text-box text_count"></textarea>
+                                    <div><span class="count"></span> words</div>
 
                                 </dd>
-                                <dt class="form-title_review">Compliance</dt>
-                                <dd class="form-item_review form-details-item">
-                                    <textarea name="compliance" id="compliance" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
-
-                                </dd>
-                                <dt class="form-title_review">Other review</dt>
-                                <dd class="form-item_review form-details-item">
-                                    <textarea name="" id="other_comments" cols="60" rows="6" class="text-box text_count"></textarea>
-                                    <div style="text-align: right"><span class="count"></span> words</div>
-                                </dd>
+                                
             </dl>
                             
                                 
@@ -208,19 +193,7 @@
                 </div>
             </div>
         </form>
-                    
-                    
-        <!--<div class="submit">-->
-        <!--    <a href="company_search_result.html" class="btn submit_btn sign-submit">Back</a>-->
-        <!--    <div class="submit-btn-inline">-->
-                
-        <!--    <input type="submit" value="submit" class="btn submit_btn sign-submit company_submit">-->
-        <!--    <a href="chat_acceptance.html"></a>-->
-        <!--    </div>-->
-        <!--</div>-->
 
-
-         
     <!--</form>-->
     <!--</div>-->
     </div>

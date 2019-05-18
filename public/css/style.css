@@ -208,6 +208,13 @@ body.dragging .rating-option {
     cursor: grabbing !important;
     -webkit-font-smoothing: antialiased;
 }
+.benefit-icon {
+    font-size: 4.4rem;
+}
+.benefit-item {
+    text-align:center;
+    font-size: 1.8rem;
+}
 
 .demo-container {
   position: relative;
