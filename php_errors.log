@@ -15,3 +15,4 @@
 [03-May-2019 00:59:32 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 36864 bytes) in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
 [03-May-2019 00:59:34 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
 [03-May-2019 00:59:46 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 36864 bytes) in /home/ubuntu/workspace/cms/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
+[18-May-2019 12:24:37 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\DB as DB because the name is already in use in /home/ubuntu/workspace/cms/app/Http/Controllers/HomeController.php on line 8

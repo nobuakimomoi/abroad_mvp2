@@ -46,7 +46,13 @@
                         <h4><a href="{{action('CompaniesController@overview', $company->id) }}">{{ $company->company_name }}</a></h4>
                         <p>{{ $company->hq_adress }}</p>
                         <p>
-                        <?php $score = $scores[$arrayid];?>
+                        <?php
+                        if($company->reviews_count>0){
+                            $score = $company->reviews_sum_rate/$company->reviews_count;
+                        }else{
+                            $score = null;
+                        }
+                        ?>
                         @for($i=0; $i<(int)$score; $i++)
                         ★
                         @endfor
@@ -54,7 +60,7 @@
                         ☆
                         @endfor
                         </p>
-                        <p>{{$review_counts[$arrayid]}} Reviews</p>
+                        <p>{{$company->reviews_count}} Reviews</p>
                     </div>
                         <div class="chart">
                             <div id="app{{$company->id}}"><canvas id="chart{{$company->id}}"></canvas></div>

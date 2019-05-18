@@ -398,12 +398,51 @@ body.dragging .rating-option {
 .review-title-wrapper {
     justify-content: space-around;
 }
+.relative {
+    position: relative;
+}
 .chat_btn {
-    padding: 6px 3px 6px 3px;
+    padding: 6px 0px 6px 18px;
     background-color: #3097d1;
     color: #fff;
     border-radius: 4px;
     font-size: 100%;
     margin: 12px 8px 0px 12px;
     border-color: #2a88bd;
+    text-align:center;
+    cursor: pointer;
+}
+.menu-icon {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: #fff;
+}
+
+/*----------------------------
+Mobile
+-------------------------------  */
+@media screen and (max-width:640px){
+    .chat_btn {
+    padding: 6px 6px 6px 24px;
+    background-color: #3097d1;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 100%;
+    margin: 12px 8px 0px 12px;
+    border-color: #2a88bd;
+    text-align:center;
+    cursor: pointer;
+}
+.menu-icon {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    margin-left: 2px;
+    color: #fff;
+}
+
+
 }

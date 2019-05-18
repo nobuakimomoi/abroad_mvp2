@@ -59,7 +59,7 @@
                     <input type="hidden" name="id" value="{{$company->id}}" />
                     <!--/ id値を送信 -->
                     {{ csrf_field() }}
-                    <button type="submit" class="btn btn-primary btn-lg">
+                    <button type="submit" class="btn btn-primary btn-lg" taget=blank>
                         Write a review
                     </button>
                 </form>
@@ -119,7 +119,11 @@
         <div class="review-wrapper">
             <div class="row">
                 <h3 class="review-title col-sm-8">XXXA</h3>
-                <button class="chat_btn col-sm-3">Ask questions to this reviewer</button>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
             </div>
             <div style="justify-content:space-between">
                 <div class="average-stars">
@@ -152,7 +156,7 @@
         <!--    {{ csrf_field() }}-->
         <!--    <button type="submit" class="btn btn-primary btn-lg btn-center">Write a review</button>-->
         <!--</form>-->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsSt4kKco9jKh98IdL-74_q47adv-LuKmZ9kPr8lU-1MMJxw/viewform">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsSt4kKco9jKh98IdL-74_q47adv-LuKmZ9kPr8lU-1MMJxw/viewform" target=blank>
             <button class="btn btn-primary btn-lg btn-center">Write a review</button>
         </a>
     </div>
