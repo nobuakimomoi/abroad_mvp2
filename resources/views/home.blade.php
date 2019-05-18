@@ -25,12 +25,14 @@
 
 <!--    </div>-->
 <!--</div>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 
 <!-- 現在 企業 -->
 @if (count($companies) > 0)
 <div class="container">
     <h3>Recent Reviews</h3>
     <div class="row">
+        <?php $arrayid=0;?>
         @foreach ($companies as $company)
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -44,30 +46,23 @@
                         <h4><a href="{{action('CompaniesController@overview', $company->id) }}">{{ $company->company_name }}</a></h4>
                         <p>{{ $company->hq_adress }}</p>
                         <p>
-                        <?php $score = rand(2,5);?>
-                        @for($i=0; $i<$score; $i++)
+                        <?php $score = $scores[$arrayid];?>
+                        @for($i=0; $i<(int)$score; $i++)
                         ★
                         @endfor
                         @for($i=$score; $i<5; $i++)
                         ☆
                         @endfor
                         </p>
-                        <p>{{rand(1,20)}} Reviews</p>
+                        <p>{{$review_counts[$arrayid]}} Reviews</p>
                     </div>
-                    <!--<div class="col-md-12">-->
                         <div class="chart">
-                            <!--<img src="{{ url('img/radder_chart.png') }}" alt="chart" class="chart">-->
                             <div id="app{{$company->id}}"><canvas id="chart{{$company->id}}"></canvas></div>
                         </div>
-                    <!--</div>-->
                 </div>
-                
             </div>
         </div>
 
-<!--  ook: 既に登録されてる企業 リスト -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 <script>
 var color = Chart.helpers.color;
 var config = {
@@ -88,12 +83,18 @@ var config = {
 			borderWidth:0.1,
 			pointRadius:0,
 			data: [
-			    Math.round(Math.random() * 100/20),
-			    Math.round(Math.random() * 100/20),
-			    Math.round(Math.random() * 100/20),
-			    Math.round(Math.random() * 100/20),
-			    Math.round(Math.random() * 100/20),
-			    Math.round(Math.random() * 100/20)
+			    {{$score}},
+			    {{$score}},
+			    {{$score}},
+			    {{$score}},
+			    {{$score}},
+			    {{$score}},
+			 //   Math.round(Math.random() * 100/20),
+			 //   Math.round(Math.random() * 100/20),
+			 //   Math.round(Math.random() * 100/20),
+			 //   Math.round(Math.random() * 100/20),
+			 //   Math.round(Math.random() * 100/20),
+			 //   Math.round(Math.random() * 100/20)
 			    ]
 		},]
 	},
@@ -122,6 +123,9 @@ var config = {
 	}
 };
 
+<?php $arrayid++;?>
+
+
 // var c=document.getElementById("#chart{{$company->id}}");
 // c.width=window.innerWidth*0.1;
 // c.height=window.innerHeight*0.1;
@@ -130,6 +134,7 @@ var myRadar = new Chart($("#chart{{$company->id}}"), config);
 </script>
  
          @endforeach
+
     </div>
 </div>
 @endif

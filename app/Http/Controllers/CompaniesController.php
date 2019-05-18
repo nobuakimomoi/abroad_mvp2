@@ -34,7 +34,6 @@ class CompaniesController extends Controller
         $reviews = Review::where('company_id', $id)->get();
         
         return view('companyoverview',compact('company','reviews'));
-        // return view('companyoverview', ['company' => $companies], ['review' => $reviews]);
     }
     
     //企業口コミ記載画面

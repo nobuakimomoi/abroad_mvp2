@@ -27,10 +27,14 @@ Route::get('/', 'HomeController@index');
 Route::get('/companyoverview/{company_id}','CompaniesController@overview');
 //レビューフォーム表示
 Route::post('/reviewform/{company_id}','CompaniesController@writeareview');
-// Route::get('/reviewform','CompaniesController@writeareview');
+
 
 //レビュー登録処理
 Route::post('/reviews','ReviewsController@store');
+
+//初回登録
+Route::get('/signup_completed','UserController@signupcomplete');
+
 
 
 //--------------------Admin

@@ -5,7 +5,7 @@
 <img src="{{url('img/login_photo.jpg')}}"alt="" class="opacity index_img">
 
 <div class="form-box">
-    <h2 class="text-center">Find the job that you love</h2>
+    <h2 class="text-center">Find the job you love</h2>
     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
         {{ csrf_field() }}
 

@@ -73,7 +73,7 @@ CREATE TABLE `companies` (
   `hiringReason` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `persona` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -82,7 +82,7 @@ CREATE TABLE `companies` (
 
 LOCK TABLES `companies` WRITE;
 /*!40000 ALTER TABLE `companies` DISABLE KEYS */;
-INSERT INTO `companies` VALUES (5,'AWS','アブロード',NULL,'http://www.squeeze.com.br/assets/img/sample/woocommerce/img/logo/1.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 10:17:41','2019-05-04 10:17:41',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,'Rakuten','ラクテン',NULL,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rakuten_Global_Brand_Logo.svg/450px-Rakuten_Global_Brand_Logo.svg.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 11:50:58','2019-05-04 11:50:58',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(7,'ANA','アナ',NULL,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/360px-All_Nippon_Airways_Logo.svg.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 11:51:55','2019-05-04 11:51:55',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(9,'リクルート','アブロード',NULL,'http://www.squeeze.com.br/assets/img/sample/woocommerce/img/logo/1.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-11 11:12:15','2019-05-11 11:12:15',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `companies` VALUES (5,'AWS','アブロード',NULL,'http://www.squeeze.com.br/assets/img/sample/woocommerce/img/logo/1.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 10:17:41','2019-05-04 10:17:41',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(6,'Rakuten','ラクテン',NULL,'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rakuten_Global_Brand_Logo.svg/450px-Rakuten_Global_Brand_Logo.svg.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 11:50:58','2019-05-04 11:50:58',NULL,NULL,NULL,NULL,NULL,NULL,NULL),(7,'ANA','アナ',NULL,'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/All_Nippon_Airways_Logo.svg/360px-All_Nippon_Airways_Logo.svg.png','307000','Tokyo, Japan','Yes',2018,'HR','Detail','https://www.ge.com/jp/','2019-05-04 11:51:55','2019-05-04 11:51:55',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `companies` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -172,7 +172,7 @@ CREATE TABLE `reviews` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -181,7 +181,7 @@ CREATE TABLE `reviews` (
 
 LOCK TABLES `reviews` WRITE;
 /*!40000 ALTER TABLE `reviews` DISABLE KEYS */;
-INSERT INTO `reviews` VALUES (1,'LINE','4','3','temporary',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:06:35','2019-05-04 10:06:35'),(2,'LINE','4','3','temporary','on',NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:16:10','2019-05-04 10:16:10'),(3,'Abroad','2','3','internship',NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:16:26','2019-05-04 10:16:26'),(4,'LINE','4','2','internship',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:18:53','2019-05-04 10:18:53'),(5,'AWS','5','2','temporary',NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'いい会社',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 11:53:41','2019-05-04 11:53:41'),(6,'AWS','5','2','temporary',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'最悪',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 11:56:24','2019-05-04 11:56:24'),(8,'LINE','8','2','contract',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'最悪！',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 12:32:33','2019-05-04 12:32:33'),(9,'LINE','8','2','contract',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'あああ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-06 08:58:12','2019-05-06 08:58:12'),(10,'Rakuten','6','2','contract',NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-11 08:18:19','2019-05-11 08:18:19');
+INSERT INTO `reviews` VALUES (1,'LINE','4','3','temporary',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:06:35','2019-05-04 10:06:35'),(2,'LINE','4','3','temporary','on',NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:16:10','2019-05-04 10:16:10'),(3,'Abroad','2','3','internship',NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:16:26','2019-05-04 10:16:26'),(4,'LINE','4','2','internship',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 10:18:53','2019-05-04 10:18:53'),(5,'AWS','5','2','temporary',NULL,NULL,NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'いい会社',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 11:53:41','2019-05-04 11:53:41'),(6,'AWS','5','2','temporary',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'最悪',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 11:56:24','2019-05-04 11:56:24'),(8,'LINE','8','2','contract',NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'最悪！',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-04 12:32:33','2019-05-04 12:32:33'),(9,'LINE','8','2','contract',NULL,NULL,NULL,NULL,3,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'あああ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-06 08:58:12','2019-05-06 08:58:12'),(10,'Rakuten','6','2','contract',NULL,NULL,NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-11 08:18:19','2019-05-11 08:18:19'),(11,'AWS','5','2','internship',NULL,NULL,NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Fair treatment of non-Japanese employees: Use of languages other than Japanese:',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2019-05-12 07:15:35','2019-05-12 07:15:35');
 /*!40000 ALTER TABLE `reviews` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -213,7 +213,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'カサイテツ','kasai@gmail.com','$2y$10$xS314IuCoFSDXRZIdxxYNOWAWwR08fxzuJbdTlxzpzkoNeBg.5tL.',NULL,NULL,NULL,'2019-05-04 06:52:18','2019-05-04 06:52:18'),(2,'スズキ','suzuki@gmail.com','$2y$10$z2T22ntBoZFqlabMkABeWeMh.JZ06AZftPUAmeMy4N3PHSXt45qhe',NULL,NULL,'LIW53Bw1AKsxedRBtuLBA3qMdvYZHYvLYfSOMKqhpDslIeXkR2MaNWFS3jFs','2019-05-04 09:45:11','2019-05-04 09:45:11'),(3,'Nobu','nobu@gmail.com','$2y$10$tXwrynOS9f8vGe2r/RIlEORorzXNmRT7nwWdTnctVlRA8Lff6a2fO',NULL,NULL,NULL,'2019-05-10 12:25:11','2019-05-10 12:25:11');
+INSERT INTO `users` VALUES (1,'カサイテツ','kasai@gmail.com','$2y$10$xS314IuCoFSDXRZIdxxYNOWAWwR08fxzuJbdTlxzpzkoNeBg.5tL.',NULL,NULL,NULL,'2019-05-04 06:52:18','2019-05-04 06:52:18'),(2,'スズキ','suzuki@gmail.com','$2y$10$z2T22ntBoZFqlabMkABeWeMh.JZ06AZftPUAmeMy4N3PHSXt45qhe',NULL,NULL,'lH7SWHQJlNb3e2jHrmNx7vDNtIdh7WImvWnBqhSb74sK06OiONw8pPlIN1A9','2019-05-04 09:45:11','2019-05-04 09:45:11'),(3,'Nobu','nobu@gmail.com','$2y$10$tXwrynOS9f8vGe2r/RIlEORorzXNmRT7nwWdTnctVlRA8Lff6a2fO',NULL,NULL,NULL,'2019-05-10 12:25:11','2019-05-10 12:25:11');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -226,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-12  5:49:48
+-- Dump completed on 2019-05-16  8:39:08

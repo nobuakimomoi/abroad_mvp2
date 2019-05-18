@@ -19,4 +19,10 @@ class UserController extends Controller
         $users = User::All();
         return view('userlist', ['users' => $users]);
     }
+    
+    public function signupcomplete()
+    {
+        return view('signup_completed');
+    }
+    
 }

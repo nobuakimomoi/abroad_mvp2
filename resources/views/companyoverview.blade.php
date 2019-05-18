@@ -10,7 +10,6 @@
     @endif
     
     
-    
     <div class="panel panel-body ">
             <div class="col-md-12">
             @include('common.errors')
@@ -118,7 +117,10 @@
     @foreach ($reviews as $review)
     <div class="panel panel-body ">
         <div class="review-wrapper">
-            <h3 class="review-title">XXX</h3>
+            <div class="row">
+                <h3 class="review-title col-sm-8">XXXA</h3>
+                <button class="chat_btn col-sm-3">Ask questions to this reviewer</button>
+            </div>
             <div style="justify-content:space-between">
                 <div class="average-stars">
                     @for($i=0; $i<$review->work_env_rate; $i++)
