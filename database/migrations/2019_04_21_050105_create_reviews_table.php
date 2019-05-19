@@ -35,12 +35,9 @@ class CreateReviewsTable extends Migration
             $table->string('work_env')->nullable();
             $table->string('screening')->nullable();
             $table->string('promotion')->nullable();
-            $table->string('gap')->nullable();
             $table->string('growth')->nullable();
             $table->string('gender_equality')->nullable();
             $table->string('c_and_b')->nullable();
-            $table->string('compliance')->nullable();
-            $table->string('other')->nullable();
             $table->timestamps();
 
         });

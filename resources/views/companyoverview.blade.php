@@ -115,10 +115,12 @@
     
     @if (count($reviews) > 0)
     @foreach ($reviews as $review)
+    <!---->
+    @if ($review->work_env != null)
     <div class="panel panel-body ">
         <div class="review-wrapper">
             <div class="row">
-                <h3 class="review-title col-sm-8">XXXA</h3>
+                <h3 class="review-title col-sm-8">Work environment for non-Japanese employees</h3>
                 <div class="relative">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
                     <i class="far fa-comments menu-icon"></i>
@@ -126,22 +128,132 @@
                 </div>
             </div>
             <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
                     work_env_rate:{{$review->work_env_rate}}<br>
-                    promotion_rate:{{$review->promotion_rate}}<br>
-                    work_life_balance_rate:{{$review->work_life_balance_rate}}<br>
-                    c_and_b_rate:{{$review->c_and_b_rate}}<br>
-                    gender_equality_rate:{{$review->gender_equality_rate}}<br>
-                    growth_rate:{{$review->growth_rate}}<br>
-
                 <div class="written-in">
                     <p>Written in {{$review->created_at}}</p>
                 </div>
                 <p class="review-comments">{{$review->work_env}}</p>
             </div>
-
- 
         </div>
     </div>
+    @endif
+    <!---->
+    @if ($review->growth != null)
+        <div class="panel panel-body ">
+        <div class="review-wrapper">
+            <div class="row">
+                <h3 class="review-title col-sm-8">Employee growth opportuntiy / environment</h3>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
+                    growth_rate:{{$review->growth_rate}}
+                <div class="written-in">
+                    <p>Written in {{$review->created_at}}</p>
+                </div>
+                <p class="review-comments">{{$review->growth}}</p>
+            </div>
+        </div>
+    </div>
+    @endif
+    <!---->
+    @if ($review->gender_equality != null)
+            <div class="panel panel-body ">
+        <div class="review-wrapper">
+            <div class="row">
+                <h3 class="review-title col-sm-8">Gender equality</h3>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
+                    gender_equality_rate:{{$review->gender_equality_rate}}<br>
+                <div class="written-in">
+                    <p>Written in {{$review->created_at}}</p>
+                </div>
+                <p class="review-comments">{{$review->gender_equality}}</p>
+            </div>
+        </div>
+    </div>
+    @endif
+    <!---->
+    @if ($review->c_and_b != null)
+    <div class="panel panel-body ">
+        <div class="review-wrapper">
+            <div class="row">
+                <h3 class="review-title col-sm-8">Compensation and benefits</h3>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
+                    c_and_b_rate:{{$review->c_and_b_rate}}<br>
+                <div class="written-in">
+                    <p>Written in {{$review->created_at}}</p>
+                </div>
+                <p class="review-comments">{{$review->c_and_b}}</p>
+            </div>
+        </div>
+    </div>
+    @endif
+    <!---->
+    @if ($review->screening != null)
+    <div class="panel panel-body ">
+        <div class="review-wrapper">
+            <div class="row">
+                <h3 class="review-title col-sm-8">Screening of non-Japanese candidates</h3>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
+                    promotion_rate:{{$review->promotion_rate}}<br>
+                <div class="written-in">
+                    <p>Written in {{$review->created_at}}</p>
+                </div>
+                <p class="review-comments">{{$review->screening}}</p>
+            </div>
+        </div>
+    </div>
+    @endif
+    <!---->
+    @if ($review->promotion != null)
+        <div class="panel panel-body ">
+        <div class="review-wrapper">
+            <div class="row">
+                <h3 class="review-title col-sm-8">Promotion of non-Japanese employees</h3>
+                <div class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf77-D9Q5XKlw2Fv4L9Sw7IlNWRKNtOhAtAfJ7XUs9Gtt6gOg/viewform" target=blank class="chat_btn col-sm-3">Ask questions to this reviewer
+                    <i class="far fa-comments menu-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div style="justify-content:space-between">
+                    reviewid:{{$review->id}}<br>
+                    promotion_rate:{{$review->promotion_rate}}<br>
+                <div class="written-in">
+                    <p>Written in {{$review->created_at}}</p>
+                </div>
+                <p class="review-comments">{{$review->promotion}}</p>
+            </div>
+        </div>
+    </div>
+    @endif
+
     @endforeach
     @endif
 
@@ -151,10 +263,6 @@
         <h3>Write your review to unlock everything on Abroad</h3>
         <p>Abroad is a career community that depends on everyone being able to share an inside look at a company they know.</p>
         <p>It's anonymous and will only take a minute.</p>
-        <!--<form action="{{ url('reviewform/'.$company->id)}}" method="GET">-->
-        <!--    {{ csrf_field() }}-->
-        <!--    <button type="submit" class="btn btn-primary btn-lg btn-center">Write a review</button>-->
-        <!--</form>-->
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsSt4kKco9jKh98IdL-74_q47adv-LuKmZ9kPr8lU-1MMJxw/viewform" target=blank>
             <button class="btn btn-primary btn-lg btn-center">Write a review</button>
         </a>

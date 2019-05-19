@@ -81,7 +81,18 @@ class ReviewsController extends Controller
         $reviews->employment_condition = $request->employment_condition;
         $reviews->enrollment_status = $request->enrollment_status;
         $reviews->work_env_rate = $request->work_env_rate;
+        $reviews->promotion_rate = $request->promotion_rate;
+        $reviews->work_life_balance_rate = $request->work_life_balance_rate;
+        $reviews->c_and_b_rate = $request->c_and_b_rate;
+        $reviews->gender_equality_rate = $request->gender_equality_rate;
+        $reviews->growth_rate = $request->growth_rate;
+        $reviews->overtime = $request->overtime;
         $reviews->work_env = $request->work_env;
+        $reviews->screening = $request->screening;
+        $reviews->promotion = $request->promotion;
+        $reviews->growth = $request->growth;
+        $reviews->gender_equality = $request->gender_equality;
+        $reviews->c_and_b = $request->c_and_b;
         $reviews->save();
         return redirect('/');
     }
