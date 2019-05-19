@@ -427,11 +427,14 @@ body.dragging .rating-option {
     color: #fff;
 }
 
+
 /*----------------------------
 Mobile
 -------------------------------  */
 @media screen and (max-width:640px){
-    .chat_btn {
+
+/*companyoverview.php*/
+   .chat_btn {
     padding: 6px 6px 6px 24px;
     background-color: #3097d1;
     color: #fff;
@@ -450,6 +453,19 @@ Mobile
     margin-left: 2px;
     color: #fff;
 }
+/*login.blade.php*/
+.form-box{
+    color: #fff;
+    font: #fff;
+    position: absolute;
+    top: 10%;
+    width:100%;
+}
+
+
+
+
+
 
 
 }

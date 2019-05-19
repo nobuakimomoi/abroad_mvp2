@@ -22,35 +22,8 @@
             <div class="col-md-8">
                         <h3>{{$company->company_name}}</h3>
                         <p>
-                        
-                        @if (count($reviews) > 0)
-                        <?php
-                                $score = 0;
-                                $count = 0;
-                        ?>
-                        @foreach ($reviews as $review)
-                        <?php
-                                $score += $review->work_env_rate;
-                                $count ++;
-                        ?>
-                            
-                        @endforeach
-                        <?php
-                            $score = $score/$count;
-                            echo 'Score'.round($score,2).'　';
-                        ?>
-                        
-                        @for($i=0; $i<(int)$score; $i++)
-                        ★
-                        @endfor
-                        @for($i=(int)$score; $i<5; $i++)
-                        ☆
-                        @endfor
-                        @endif
-                        
-          
+                        {{$company->ave_score}}
                         </p>
-                        
             </div>
             <div class="col-md-2">
                 <form action="{{ url('reviewform/'.$company->id)}}" method="POST">

@@ -58,8 +58,12 @@
         
         <dl class="form-inner">
             <dt class="form-title_review check-radio school-type">Work environment for non-Japanese employees</dt>
-            <dd class="form-item_review">
-                @include('common.rating')
+            <dd class="form-item_review"><!--@include('common.rating')-->
+                <label><input type="radio" name="work_env_rate" value="5">Very good</label>
+                <label><input type="radio" name="work_env_rate" value="4">Good</label>
+                <label><input type="radio" name="work_env_rate" value="3">Not sure</label>
+                <label><input type="radio" name="work_env_rate" value="2">Bad</label>
+                <label><input type="radio" name="work_env_rate" value="1">Very bad</label>
             </dd>
 
             <dt class="form-title_review check-radio school-type">Employee growth oppurtunity/environment</dt>
