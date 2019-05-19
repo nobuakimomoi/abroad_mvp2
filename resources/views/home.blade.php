@@ -1,30 +1,5 @@
 @extends('layouts.app')
-
 @section('content')
-<!--<div class="container hero-background">-->
-<!--    <div class="search-wrapper text-center">-->
-        
-<!--            <div class="search-title">Search company reviews and hiring positions</div>-->
-<!--                @if (session('status'))-->
-<!--                    <div class="alert alert-success">-->
-<!--                        {{ session('status') }}-->
-<!--                    </div>-->
-<!--                @endif-->
-                
-<!--            <div class="col-md-12">-->
-<!--            <div class="col-md-9">-->
-<!--            <form action="#" method="GET">-->
-<!--            <input type="search" name="search" class="form-control" placeholder="Type company name here">-->
-<!--            </div>-->
-<!--            <div class="col-md-3">-->
-<!--            <button type="submit" class="btn btn-wred btn-md">Search</button>-->
-<!--            </form>-->
-<!--            </div>-->
-<!--            </div>-->
-<!--            <p class="text-mini-ad">Are you hirering? Post Jobs for free!</p>-->
-
-<!--    </div>-->
-<!--</div>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 
 <!-- 現在 企業 -->
@@ -32,7 +7,6 @@
 <div class="container">
     <h3>Recent Reviews</h3>
     <div class="row">
-        <?php $arrayid=0;?>
         @foreach ($companies as $company)
         <div class="col-md-4">
             <div class="panel panel-default">
@@ -134,19 +108,12 @@ var config = {
 			},
 			pointLabels: {
 				fontSize:8,
-				// fontColor: colorSet.yellow
 			},
 
 		}
 	}
 };
 
-<?php $arrayid++;?>
-
-
-// var c=document.getElementById("#chart{{$company->id}}");
-// c.width=window.innerWidth*0.1;
-// c.height=window.innerHeight*0.1;
 
 var myRadar = new Chart($("#chart{{$company->id}}"), config);
 </script>
