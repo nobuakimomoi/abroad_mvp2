@@ -40,17 +40,18 @@ class HomeController extends Controller
     -> orderBy('created_at', 'desc')->get();
 
 
-    $reviews_count = 0; 
+
     foreach($companies as $company) {
         // $reviews_count = $company->reviews_count;
+        $company->reviews_counts = 0;
 
         foreach($company->reviews as $review){
-            if ($review->work_env != null){$reviews_count +=1;}
-            if ($review->screening != null){$reviews_count +=1;}
-            if ($review->promotion != null){$reviews_count +=1;}
-            if ($review->growth != null){$reviews_count +=1;}
-            if ($review->gender_equality != null){$reviews_count +=1;}
-            if ($review->c_and_b != null){$reviews_count +=1;}
+            if ($review->work_env != null){$company->reviews_counts +=1;}
+            if ($review->screening != null){$company->reviews_counts +=1;}
+            if ($review->promotion != null){$company->reviews_counts +=1;}
+            if ($review->growth != null){$company->reviews_counts +=1;}
+            if ($review->gender_equality != null){$company->reviews_counts +=1;}
+            if ($review->c_and_b != null){$company->reviews_counts +=1;}
         } 
         
         $reviews_sum_work_env_rate = $company->reviews_sum_work_env_rate;

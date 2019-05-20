@@ -52,7 +52,7 @@
                         ☆
                         @endfor
                         </p>
-                        <p>{{$company->reviews_count}} Reviews</p>
+                        <p>{{$company->reviews_counts}} Reviews</p>
                     </div>
                         <div class="chart">
                             <div id="app{{$company->id}}"><canvas id="chart{{$company->id}}"></canvas></div>
